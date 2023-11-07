@@ -11,6 +11,6 @@ setupTasks:
   - task: powershell
     description: run script
     inputs:
-      command: './dark-them.ps1'
+      command: './dark-theme.ps1'
       workingDirectory: C:\\src\\dotfiles-ignite\\windows
       runAsUser: true
