@@ -12,5 +12,5 @@ setupTasks:
     description: run script
     inputs:
       command: './dark-theme.ps1'
-      workingDirectory: C:\\src\\dotfiles-ignite\\windows
+      workingDirectory: 'C:\src\dotfiles-ignite\windows'
       runAsUser: true
