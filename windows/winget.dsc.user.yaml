@@ -16,6 +16,7 @@ properties:
        allowPrerelease: true
      settings:
        Ensure: Present
+       RestartExplorer: true
    - resource: Microsoft.Windows.Developer/HideFileExtensions
      directives:
        description: Hide File Extensions
