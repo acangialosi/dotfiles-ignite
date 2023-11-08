@@ -3,17 +3,15 @@ setupTasks:
     inputs:
       repositoryUrl: 'https://github.com/acangialosi/dotfiles-ignite'
       directory: 'c:\src'
-      pat: 'blank'
   - task: powershell
     inputs:
-      command: './dark-theme.ps1'
-      workingDirectory: 'C:\src\dotfiles-ignite\windows'
+      command: './app-vs-user-settings.ps1'
+      workingDirectory: 'c:\src\dotfiles-ignite\visualstudio\'
       runAsUser: true
   - task: winget
     inputs:
       package: 'Telerik.Fiddler.Classic'
       runAsUser: true
   - task: winget
-    description: Apply a winget configuration file that's already present on the machine
     inputs:
       configurationFile: 'C:\src\dotfiles-ignite\windows\winget.dsc.user.yaml'

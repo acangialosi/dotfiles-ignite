@@ -1,1 +1,1 @@
-[System.Environment]::SetEnvironmentVariable('VS_UNIFIED_SETTINGS_PROFILE','C:\src\dotfiles-ignite\visualstudio\settings\devbox', 'User')
+[System.Environment]::SetEnvironmentVariable('VS_UNIFIED_SETTINGS_PROFILE','c:\src\dotfiles-ignite\visualstudio\settings\devbox', 'User')
