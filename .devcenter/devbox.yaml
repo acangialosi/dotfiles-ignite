@@ -15,3 +15,4 @@ setupTasks:
   - task: winget
     inputs:
       configurationFile: 'C:\src\dotfiles-ignite\windows\winget.dsc.user.yaml'
+      runAsUser: true
