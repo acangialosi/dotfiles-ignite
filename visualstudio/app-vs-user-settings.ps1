@@ -1,0 +1,1 @@
+[System.Environment]::SetEnvironmentVariable('VS_UNIFIED_SETTINGS_PROFILE','C:\src\dotfiles-ignite\visualstudio\settings\devbox', 'User')
