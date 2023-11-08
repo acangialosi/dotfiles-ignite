@@ -23,3 +23,19 @@ properties:
        allowPrerelease: true
      settings:
        Ensure: Absent
+   - resource: Microsoft.WinGet.DSC/WinGetPackage
+     id: Azd
+     directives:
+       description: Install Azd
+       allowPrerelease: true
+     settings:
+       id: Microsoft.Azd
+       source: winget
+   - resource: Microsoft.WinGet.DSC/WinGetPackage
+     id: Fiddler
+     directives:
+       description: Install Fiddler
+       allowPrerelease: true
+     settings:
+       id: Telerik.Fiddler.Classic
+       source: winget

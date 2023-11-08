@@ -12,6 +12,8 @@
 
 properties:
   configurationVersion: 0.2.0
+  #TODO: Add os version assertion
+
   #Must be run as admin on Windows 23H2 + latest October Windows update.
   - resource: Disk
     id: DevDrive1

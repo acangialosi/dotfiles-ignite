@@ -10,7 +10,7 @@ setupTasks:
       runAsUser: true
   - task: winget
     inputs:
-      package: 'Telerik.Fiddler.Classic'
+      package: 'Microsoft.Azd'
       runAsUser: true
   - task: winget
     inputs:
