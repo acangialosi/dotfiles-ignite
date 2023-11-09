@@ -1,0 +1,5 @@
+setupTasks:
+  - task: winget
+    inputs:
+      configurationFile: 'C:\Users\anthc\source\dotfiles-ignite\windows\testconfigazd.yaml'
+      runAsUser: true

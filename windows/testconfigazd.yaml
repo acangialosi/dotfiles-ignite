@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+# Reference: https://github.com/microsoft/winget-cli#building-the-client
+
+###############################################################################
+# Enable Dark Mode - explorer must be restarted                               #
+# Show File Extensions  - explorer must be restarted                          #
+###############################################################################
+
+properties:
+  configurationVersion: 0.2.0
+  resources:
+   - resource: Microsoft.WinGet.DSC/WinGetPackage
+     id: Azd
+     directives:
+       description: Install Azd
+       allowPrerelease: true
+     settings:
+       id: Microsoft.Azd  
+       source: winget
