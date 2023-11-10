@@ -1,5 +1,0 @@
-setupTasks:
-  - task: winget
-    inputs:
-      package: 'Microsoft.Azd'
-      runAsUser: true
