@@ -3,11 +3,9 @@ setupTasks:
     inputs:
       repositoryUrl: 'https://github.com/acangialosi/dotfiles-ignite'
       directory: 'c:\src'
-  # Fails due to missing runasuser functionality
   - task: powershell
     inputs:
-      command: './app-vs-user-settings.ps1'
-      workingDirectory: 'c:\src\dotfiles-ignite\visualstudio\'
+      command: '& c:\src\dotfiles-ignite\visualstudio\app-vs-user-settings.ps1'
       runAsUser: true
   - task: winget
     inputs:
