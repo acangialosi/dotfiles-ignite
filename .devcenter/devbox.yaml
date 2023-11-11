@@ -3,6 +3,21 @@ setupTasks:
     inputs:
       repositoryUrl: 'https://github.com/acangialosi/dotfiles-ignite'
       directory: 'c:\src'
+#Remove after fix deployed
+  - task: powershell
+    inputs:
+      command: 'Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted'
+      runAsUser: true
+#Remove after fix deployed
+  - task: powershell
+    inputs:
+      command: 'Install-Module -Name winget'
+      runAsUser: true
+#Remove after fix deployed
+  - task: powershell
+    inputs:
+      command: 'Install-Module -Name Microsoft.WinGet.Configuration -AllowPrerelease'
+      runAsUser: true
   - task: powershell
     inputs:
       command: '& c:\src\dotfiles-ignite\visualstudio\app-vs-user-settings.ps1'
