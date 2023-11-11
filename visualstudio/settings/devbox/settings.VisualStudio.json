@@ -9,5 +9,6 @@
   "environment.tabs.documentTabs.dirtyIndicator": "dot",
   "environment.tabs.documentTabs.boldSelectedTabs": true,
   "textEditor.general.display.bracePairColorization": true,
-  "textEditor.general.stickyScroll.enable": true
+  "textEditor.general.stickyScroll.enable": true,
+  "previewFeatures.shellExperimentalStyles": true
 }

@@ -23,6 +23,15 @@ properties:
        allowPrerelease: true
      settings:
        Ensure: Absent
+  # Not tested
+  #  - resource: Microsoft.VisualStudio.DSC/VSComponents
+  #    id: VSExtensions
+  #    directives:
+  #      allowPrerelease: true
+  #    settings:
+  #      ProductId: Microsoft.VisualStudio.Product.Enterprise
+  #      ChannelId: VisualStudio.17.preview
+  #      VsConfigFile: 'C:\src\dotfiles-ignite\visualstudio\settings\extenisons\extensions.config'
    - resource: Microsoft.WinGet.DSC/WinGetPackage
      id: Azd
      directives:
