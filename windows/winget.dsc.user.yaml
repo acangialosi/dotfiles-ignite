@@ -31,7 +31,7 @@ properties:
   #    settings:
   #      ProductId: Microsoft.VisualStudio.Product.Enterprise
   #      ChannelId: VisualStudio.17.preview
-  #      VsConfigFile: 'C:\src\dotfiles-ignite\visualstudio\settings\extenisons\extensions.config'
+  #      VsConfigFile: 'C:\src\dotfiles-ignite\visualstudio\extenisons\extensions.vsconfig'
    - resource: Microsoft.WinGet.DSC/WinGetPackage
      id: Azd
      directives:
