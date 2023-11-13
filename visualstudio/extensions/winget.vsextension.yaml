@@ -1,9 +1,6 @@
 # yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
-# Reference: https://github.com/microsoft/winget-cli#building-the-client
 
 ###############################################################################
-# Enable Dark Mode - explorer must be restarted                               #
-# Show File Extensions  - explorer must be restarted                          #
 ###############################################################################
 
 properties:
