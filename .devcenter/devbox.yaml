@@ -5,7 +5,7 @@ setupTasks:
       directory: 'c:\src'
   - task: powershell
     inputs:
-      command: 'git config --global user.name "Your Name Here" && git config --global user.email your@email.example'
+      command: 'git config --global user.name ''Your Name Here'' && git config --global user.email your@email.example'
       runAsUser: true
 # #Remove after fix deployed
 #   - task: powershell
