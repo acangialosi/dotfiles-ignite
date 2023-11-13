@@ -24,7 +24,7 @@ setupTasks:
 #       runAsUser: true
   - task: powershell
     inputs:
-      command: '& c:\src\dotfiles-ignite\visualstudio\app-vs-user-settings.ps1'
+      command: '& c:\src\dotfiles-ignite\visualstudio\setup-vs.ps1'
       runAsUser: true
   - task: winget
     inputs:
