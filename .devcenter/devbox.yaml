@@ -1,12 +1,12 @@
 setupTasks:
-  - task: powershell
-    inputs:
-      command: 'git config --global user.name "Your Name Here" && git config --global user.email your@email.example'
-      runAsUser: true
   - task: git-clone
     inputs:
       repositoryUrl: 'https://github.com/acangialosi/dotfiles-ignite'
       directory: 'c:\src'
+  - task: powershell
+    inputs:
+      command: 'git config --global user.name "Your Name Here" && git config --global user.email your@email.example'
+      runAsUser: true
 # #Remove after fix deployed
 #   - task: powershell
 #     inputs:
