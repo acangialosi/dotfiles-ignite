@@ -33,12 +33,20 @@ properties:
   #      includeRecommended: true
   #      allowUnsignedExtensions: true
    - resource: Microsoft.WinGet.DSC/WinGetPackage
-     id: Azd
+     id: RDClient
      directives:
        description: Install RD Client
        allowPrerelease: true
      settings:
        id: Microsoft.RemoteDesktopClient
+       source: winget
+   - resource: Microsoft.WinGet.DSC/WinGetPackage
+     id: OMP
+     directives:
+       description: Install Oh My Posh
+       allowPrerelease: true
+     settings:
+       id: JanDeDobbeleer.OhMyPosh
        source: winget
    - resource: Microsoft.WinGet.DSC/WinGetPackage
      id: Azd
