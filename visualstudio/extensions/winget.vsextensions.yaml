@@ -25,3 +25,4 @@ properties:
         channelId: VisualStudio.17.IntPreview
         VsConfigFile: 'C:\src\dotfiles-ignite\visualstudio\extensions\extensions.vsconfig'
         includeRecommended: true
+        allowUnsignedExtensions: true
