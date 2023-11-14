@@ -22,16 +22,16 @@ properties:
        allowPrerelease: true
      settings:
        Ensure: Absent
-   - resource: Microsoft.VisualStudio.DSC/VSComponents
-     directives:
-       description: Install required VS workloads from vsconfig file
-       allowPrerelease: true
-     settings:
-       productId: Microsoft.VisualStudio.Product.Enterprise
-       channelId: VisualStudio.17.Preview
-       VsConfigFile: 'C:\src\dotfiles-ignite\visualstudio\extensions\extensions.vsconfig'
-       includeRecommended: true
-       allowUnsignedExtensions: true
+  #  - resource: Microsoft.VisualStudio.DSC/VSComponents
+  #    directives:
+  #      description: Install required VS workloads from vsconfig file
+  #      allowPrerelease: true
+  #    settings:
+  #      productId: Microsoft.VisualStudio.Product.Enterprise
+  #      channelId: VisualStudio.17.Preview
+  #      VsConfigFile: 'C:\src\dotfiles-ignite\visualstudio\extensions\extensions.vsconfig'
+  #      includeRecommended: true
+  #      allowUnsignedExtensions: true
    - resource: Microsoft.WinGet.DSC/WinGetPackage
      id: Azd
      directives:

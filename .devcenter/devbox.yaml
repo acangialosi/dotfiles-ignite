@@ -7,21 +7,6 @@ setupTasks:
     inputs:
       command: 'git config --global user.name ''Your Name Here'' && git config --global user.email your@email.example'
       runAsUser: true
-# #Remove after fix deployed
-#   - task: powershell
-#     inputs:
-#       command: 'Set-PSRepository -Name "PSGallery" -InstallationPolicy Trusted'
-#       runAsUser: true
-# #Remove after fix deployed
-#   - task: powershell
-#     inputs:
-#       command: 'Install-Module -Name winget'
-#       runAsUser: true
-# #Remove after fix deployed
-#   - task: powershell
-#     inputs:
-#       command: 'Install-Module -Name Microsoft.WinGet.Configuration -AllowPrerelease'
-#       runAsUser: true
   - task: powershell
     inputs:
       command: '& c:\src\dotfiles-ignite\visualstudio\setup-vs.ps1'
