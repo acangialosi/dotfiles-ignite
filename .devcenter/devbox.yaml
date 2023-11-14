@@ -14,11 +14,11 @@ setupTasks:
   - task: choco
     inputs:
       package: nodejs
-  - task: powershell
-    inputs:
-      command: '& c:\src\dotfiles-ignite\setup-tools.ps1'
-      runAsUser: true
   - task: winget
     inputs:
       configurationFile: 'C:\src\dotfiles-ignite\windows\winget.dsc.user.yaml'
+      runAsUser: true
+  - task: powershell
+    inputs:
+      command: '& c:\src\dotfiles-ignite\setup-tools.ps1'
       runAsUser: true

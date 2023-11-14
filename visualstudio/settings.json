@@ -24,5 +24,6 @@
   "textEditor.advanced.rtfCopy": true,
   "textEditor.general.stickyScroll.enable": false,
   "textEditor.general.display.bracePairColorization": false,
+  "previewFeatures.vSCoreWelcomePage": true,
   "previewFeatures.shellExperimentalStyles": true
 }
