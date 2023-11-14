@@ -22,16 +22,6 @@ properties:
        allowPrerelease: true
      settings:
        Ensure: Absent
-  #  - resource: Microsoft.VisualStudio.DSC/VSComponents
-  #    directives:
-  #      description: Install required VS workloads from vsconfig file
-  #      allowPrerelease: true
-  #    settings:
-  #      productId: Microsoft.VisualStudio.Product.Enterprise
-  #      channelId: VisualStudio.17.Preview
-  #      VsConfigFile: 'C:\src\dotfiles-ignite\visualstudio\extensions\extensions.vsconfig'
-  #      includeRecommended: true
-  #      allowUnsignedExtensions: true
    - resource: Microsoft.WinGet.DSC/WinGetPackage
      id: RDClient
      directives:
@@ -64,37 +54,28 @@ properties:
      settings:
        id: Telerik.Fiddler.Classic
        source: winget
-  # Not tested
-  #  - resource: Disk
-  #    id: DevDrive1
-  #    directives:
-  #      description: 'Format a new Dev Drive volume onto Disk 0'
-  #      module: StorageDsc
-  #      allowPrerelease: true
-  #    settings:
-  #      DiskId: '0'
-  #      DiskIdType: 'Number'
-  #      DriveLetter: 'Z'
-  #      FSLabel: 'Dev Drive 1'
-  #      DevDrive: true
-  #      AllowDestructive: true
-  #      FSFormat: 'ReFS'
-  #      Size: '50Gb'
-  #  - resource: Microsoft.WinGet.DSC/WinGetPackage
-  #    id: Git
-  #    directives:
-  #      description: Install Git
-  #      allowPrerelease: true
-  #    settings:
-  #      id: Git.Git
-  #      source: winget
-  #  - resource: GitDsc/GitClone
-  #    dependsOn:
-  #     - Git
-  #   directives:
-  #     description: Clone WinGet CLI GitHub repository
-  #     allowPrerelease: true
-  #   settings:
-  #     HttpsUrl: https://github.com/acangialosi/tictactoe
-  #     RootDirectory: c:\src
-  #     Ensure: Present
+   - resource: Microsoft.VisualStudio.DSC/VSComponents
+     directives:
+       description: Install required VS workloads from vsconfig file
+       allowPrerelease: true
+     settings:
+       productId: Microsoft.VisualStudio.Product.Enterprise
+       channelId: VisualStudio.17.Preview
+       VsConfigFile: 'C:\src\dotfiles-ignite\visualstudio\extensions\extensions.vsconfig'
+       includeRecommended: true
+       allowUnsignedExtensions: true
+   - resource: Disk
+     id: DevDrive1
+     directives:
+       description: 'Format a new Dev Drive volume onto Disk 0'
+       module: StorageDsc
+       allowPrerelease: true
+     settings:
+       DiskId: '0'
+       DiskIdType: 'Number'
+       DriveLetter: 'Z'
+       FSLabel: 'Dev Drive 1'
+       DevDrive: true
+       AllowDestructive: true
+       FSFormat: 'ReFS'
+       Size: '50Gb'
