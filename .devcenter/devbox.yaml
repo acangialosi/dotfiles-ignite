@@ -7,13 +7,16 @@ setupTasks:
     inputs:
       command: 'git config --global user.name ''Your Name Here'' && git config --global user.email your@email.example'
       runAsUser: true
-  - task: powershell
-    inputs:
-      command: '& c:\src\dotfiles-ignite\visualstudio\setup-vs.ps1'
-      runAsUser: true
   - task: winget
     inputs:
-      package: 'Microsoft.Azd'
+      package: 'JanDeDobbeleer.OhMyPosh'
+      runAsUser: true
+  - task: choco
+    inputs:
+      package: nodejs
+  - task: powershell
+    inputs:
+      command: '& c:\src\dotfiles-ignite\setup-tools.ps1'
       runAsUser: true
   - task: winget
     inputs:
