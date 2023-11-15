@@ -1,7 +1,13 @@
 # Sample of a personal automation script
 
+# Set dark mode
+winget configure '.\windows\dark-mode.yaml' --accept-configuration-agreements
+
+# Install Oh My Posh
+winget configure '.\windows\oh-my-posh.yaml' --accept-configuration-agreements
+
 # Install packages and configure Windows
-winget configure .\windows\winget.dsc.user.yaml --accept-configuration-agreements
+winget configure '.\windows\winget.dsc.user.yaml' --accept-configuration-agreements
 
 # Setup OMP
 oh-my-posh font install --user CascadiaCode
