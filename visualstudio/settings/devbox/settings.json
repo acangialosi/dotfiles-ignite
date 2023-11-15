@@ -2,13 +2,8 @@
 {
   "environment.visualExperience.colorTheme": "bubblegum",
   "environment.tabs.documentTabs.layout": "left",
-  "environment.tabs.documentTabs.showHideButtonInWell": false,
-  "environment.tabs.documentTabs.showHideButtonInTabs": true,
-  "environment.tabs.documentTabs.colorizeDocumentTabs": true,
-  "environment.tabs.documentTabs.colorizeDocumentTabsMethod": "extension",
-  "environment.tabs.documentTabs.dirtyIndicator": "dot",
-  "environment.tabs.documentTabs.boldSelectedTabs": true,
   "textEditor.general.display.bracePairColorization": true,
   "textEditor.general.stickyScroll.enable": true,
+  "previewFeatures.vSCoreWelcomePage": true,
   "previewFeatures.shellExperimentalStyles": true
 }
