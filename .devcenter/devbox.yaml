@@ -20,5 +20,5 @@ setupTasks:
       runAsUser: true
   - task: powershell
     inputs:
-      command: '& c:\src\dotfiles-ignite\setup-tools.ps1'
+      command: '& c:\src\dotfiles-ignite\.devcenter\setup-tools.ps1'
       runAsUser: true
