@@ -6,4 +6,5 @@ Import-Module -Name Terminal-Icons
 
 
 # Setup VS Settings
-[System.Environment]::SetEnvironmentVariable('VS_UNIFIED_SETTINGS_PROFILE','c:\src\dotfiles-ignite\visualstudio\settings\devbox', 'User')
+$vssettingpath = join-path (get-location).path '\visualstudio\settings\devbox'
+[System.Environment]::SetEnvironmentVariable('VS_UNIFIED_SETTINGS_PROFILE', $vssettingpath, 'User')
