@@ -14,9 +14,4 @@ Import-Module -Name Terminal-Icons
 
 
 # Install packages and configure Windows
-winget configure '.\windows\winget.dsc.user.yaml' --accept-configuration-agreements
-
-
-# Setup VS Settings
-$vssettingpath = join-path (get-location).path '\visualstudio\settings\devbox'
-[System.Environment]::SetEnvironmentVariable('VS_UNIFIED_SETTINGS_PROFILE', $vssettingpath, 'User')
+winget configure '.\windows\dev-drive.yaml' --accept-configuration-agreements
