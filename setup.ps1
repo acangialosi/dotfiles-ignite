@@ -1,5 +1,7 @@
 # Sample of a personal automation script
 
+git config --global user.name "Anthony"
+
 # Set dark mode
 winget configure '.\windows\dark-mode.yaml' --accept-configuration-agreements
 
