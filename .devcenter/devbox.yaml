@@ -11,9 +11,6 @@ setupTasks:
     inputs:
       package: 'JanDeDobbeleer.OhMyPosh'
       runAsUser: true
-  - task: choco
-    inputs:
-      package: nodejs
   - task: winget
     inputs:
       configurationFile: 'C:\src\dotfiles-ignite\windows\winget.dsc.user.yaml'
